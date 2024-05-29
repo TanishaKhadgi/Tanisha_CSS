@@ -1,0 +1,86 @@
+body {
+    font-family: 'Edu TAS Beginner', sans-serif;
+    background-color: #ad99c9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    color: black;
+    background-image: url('marryyou.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Sevillana', cursive;
+    width: 100%;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lyrics {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+p {
+    margin: 15px 0;
+    font-size: 1.2em;
+    line-height: 1.6;
+    transition: transform 0.3s ease;
+}
+
+p:hover {
+    transform: scale(1.05);
+}
+
+.Chorus1 {
+    background-color: #cba0e6;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Chorus2 {
+    background-color: #D1C4E9;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Chorus3 {
+    background-color: #de98ed;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333333;
+    color: white;
+    font-size: 0.9em;
+    width: 100%;
+}
