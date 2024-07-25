@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delicious Cadbury Chocolate Homepage">
+    <title>Cadbury - The Taste of Joy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Cadbury</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" onclick="showSection('about')">About</a></li>
+                <li><a href="#gallery" onclick="showSection('gallery')">Gallery</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Cadbury</h2>
+            <p>Cadbury is one of the world's most popular chocolate brands, offering a wide range of delicious treats including Dairy Milk, Bournville, and much more. Indulge in the rich and creamy taste that brings joy to millions every day.Cadbury manufactured their first Easter egg in 1875, creating the modern chocolate Easter egg after developing a pure cocoa butter that could be moulded into smooth shapes.By 1893, Cadbury had 19 different varieties of chocolate Easter egg on sale.</p>
+            <img src="Cadbury1.png" alt="Cadbury Logo">
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="Cadbury2.jpg" alt="Cadbury Dairy Milk" class="zoom-effect">
+                <img src="Cadbury3.jpg" alt="Assorted Cadbury Chocolates" class="zoom-effect">
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Company Information: Cadbury, 123 Chocolate Street, Sweet City, Candyland. Phone: (123) 456-7890</p>
+            <form>
+                <h3>Quick Contact</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="Cadbury1.png" alt="Cadbury Logo">
+            <p>Company Information: Cadbury, 123 Chocolate Street, Sweet City, Candyland. Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Show the about section by default
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('about');
+        });
+    </script>
+</body>
+</html>
