@@ -1,0 +1,166 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Home page specific styles */
+.homepage {
+    background-color: blue;
+    color: yellow;
+    text-align: center;
+    padding: 2rem;
+}
+
+.homepage h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.homepage p {
+    font-size: 1.2rem;
+}
+
+.homepage nav ul li a {
+    color: yellow;
+}
+
+.homepage footer p a {
+    color: yellow;
+}
+
+/* Product page specific styles */
+.product {
+    text-align: center;
+    padding: 2rem;
+}
+
+.product h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.product-image {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 2rem);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.product-image p {
+    font-size: 1rem;
+}
+
+.product-image:hover {
+    transform: scale(1.05);
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.5rem 2rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.cta:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p a {
+    color: #fff;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .product-image {
+        width: calc(100% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .product h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta {
+        font-size: 1rem;
+    }
+}
